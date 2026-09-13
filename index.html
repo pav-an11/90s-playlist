@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Retro Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="player-overlay">
+        
+        <!-- The visual animation bars -->
+        <div class="visualizer" id="visualizer">
+            <span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- The progress bar and timers -->
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <span id="total-time">0:00</span>
+        </div>
+
+        <!-- The buttons -->
+        <div class="controls">
+            <button id="prev-btn">⏮</button>
+            <button id="play-btn" class="play-btn">▶</button>
+            <button id="next-btn">⏭</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
