@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
+
+html, body {
+    height: 100dvh; /* Dynamic height specifically for mobile browsers */
     width: 100vw;
+}
+
+body {
     background-image: url('90s poster.jpg');
-    background-size: cover;       /* Zooms the image to fill all empty space */
-    background-position: center;  /* Centers the image perfectly on all screens */
+    background-size: cover;       
+    background-position: center;  
     background-repeat: no-repeat;
     background-color: #000; 
     position: relative;
