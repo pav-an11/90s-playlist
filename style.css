@@ -12,7 +12,8 @@ html, body {
 
 body {
     background-image: url('90s poster.jpg');
-    background-size: cover;       
+    /* Stretches the image exactly to the screen width and height */
+    background-size: 100% 100%; 
     background-position: center;  
     background-repeat: no-repeat;
     background-color: #000; 
