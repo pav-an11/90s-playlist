@@ -13,7 +13,7 @@ html, body {
 body {
     background-image: url('90s poster.jpg');
     background-size: contain;      /* Keeps the original un-zoomed size */
-    background-position: center bottom; /* Pushes the image down to the bottom edge */
+    background-position: center; /* Pushes the image down to the bottom edge */
     background-repeat: no-repeat;
     
     /* Matches the dark teal sky at the top of your poster */
