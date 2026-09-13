@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url('90s poster.jpg');
+    background-image: url('90s poster.png');
     background-size: contain;      /* Keeps the original un-zoomed size */
     background-position: center; /* Pushes the image down to the bottom edge */
     background-repeat: no-repeat;
