@@ -12,11 +12,13 @@ html, body {
 
 body {
     background-image: url('90s poster.jpg');
-    /* Stretches the image exactly to the screen width and height */
-    background-size: 100% 100%; 
-    background-position: center;  
+    background-size: contain;      /* Keeps the original un-zoomed size */
+    background-position: center bottom; /* Pushes the image down to the bottom edge */
     background-repeat: no-repeat;
-    background-color: #000; 
+    
+    /* Matches the dark teal sky at the top of your poster */
+    background-color: #12252b; 
+    
     position: relative;
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
