@@ -237,11 +237,12 @@ function updateProgress(e) {
     }
 }
 
-function setProgress(e) {
-    const width = this.clientWidth;
-    const clickX = e.offsetX;
+function setProgress() {
+    // Uses the slider's native 0-100 value to calculate the new audio time
     const duration = audio.duration;
-    audio.currentTime = (clickX / width) * duration;
+    if (!isNaN(duration)) {
+        audio.currentTime = (progressBar.value / 100) * duration;
+    }
 }
 
 // Event Listeners
@@ -249,7 +250,7 @@ playBtn.addEventListener("click", togglePlay);
 nextBtn.addEventListener("click", playNext);
 prevBtn.addEventListener("click", playPrev);
 audio.addEventListener('timeupdate', updateProgress);
-progressBar.addEventListener('click', setProgress);
+progressBar.addEventListener('input', setProgress);
 
 audio.addEventListener('loadedmetadata', () => {
     totalTimeEl.textContent = formatTime(audio.duration);
